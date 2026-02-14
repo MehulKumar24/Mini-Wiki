@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mini-Wiki</title>
+
+<style>
+
+/* ===== Body ===== */
+body{
+  margin:0;
+  font-family:Arial, sans-serif;
+  background:#020617;
+  color:#E5E7EB;
+  line-height:1.65;
+  letter-spacing:.2px;
+}
+
+/* ===== Navigation ===== */
+nav{
+  background:#0F172A;
+  padding:13px 10px;
+  text-align:center;
+  border-bottom:1px solid #1F2937;
+}
+
+nav a{
+  color:#CBD5F5;
+  margin:0 15px;
+  text-decoration:none;
+  font-size:14px;
+  transition:color .2s ease;
+}
+
+nav a:hover{
+  color:#22C55E;
+}
+
+/* ===== Logo ===== */
+.logo{
+  display:block;
+  margin:60px auto 12px auto;
+  width:190px;
+}
+
+/* ===== Intro ===== */
+.intro{
+  max-width:720px;
+  margin:18px auto;
+  text-align:center;
+}
+
+.intro h1{
+  margin-bottom:10px;
+  font-weight:600;
+}
+
+.intro p{
+  color:#D1D5DB;
+}
+
+/* ===== Headings ===== */
+h2{
+  font-weight:600;
+  margin-bottom:6px;
+}
+
+p{
+  margin:6px 0;
+}
+
+/* ===== Dropdown Sections ===== */
+details{
+  max-width:720px;
+  margin:15px auto;
+  background:#0F172A;
+  border:1px solid #1F2937;
+  border-radius:6px;
+  padding:10px 12px;
+  transition:background .2s ease;
+}
+
+details:hover{
+  background:#111C2E;
+}
+
+summary{
+  cursor:pointer;
+  font-size:15px;
+  font-weight:bold;
+  color:#E5E7EB;
+}
+
+details p,
+details ul{
+  margin-top:10px;
+  color:#D1D5DB;
+}
+
+details ul{
+  text-align:left;
+  display:inline-block;
+  line-height:1.6;
+}
+
+/* ===== Lists ===== */
+ul{
+  padding-left:18px;
+}
+
+li{
+  margin:4px 0;
+}
+
+/* ===== Links ===== */
+a{
+  color:#60A5FA;
+}
+
+a:hover{
+  color:#22C55E;
+}
+
+/* ===== Table ===== */
+table{
+  margin:20px auto;
+  border-collapse:collapse;
+  width:85%;
+  max-width:700px;
+}
+
+th,td{
+  border:1px solid #1F2937;
+  padding:8px 10px;
+  text-align:center;
+}
+
+th{
+  background:#0F172A;
+  color:#E5E7EB;
+}
+
+td{
+  color:#D1D5DB;
+}
+
+/* ===== Form ===== */
+input,textarea{
+  background:#0F172A;
+  border:1px solid #1F2937;
+  color:#E5E7EB;
+  padding:6px;
+  border-radius:4px;
+}
+
+input[type="submit"]{
+  background:#22C55E;
+  border:none;
+  color:#022C22;
+  padding:7px 14px;
+  cursor:pointer;
+}
+
+input[type="submit"]:hover{
+  background:#16A34A;
+}
+
+/* ===== Footer ===== */
+
+.site-footer {
+  background: #020617;
+  border-top: 1px solid #1F2937;
+  margin-top: 40px;
+  padding: 30px 20px;
+  color: #9CA3AF;
+  font-size: 13px;
+}
+
+.footer-container {
+  max-width: 900px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  text-align: left;
+}
+
+.footer-section {
+  margin: 10px 0;
+  min-width: 220px;
+}
+
+.footer-title {
+  color: #E5E7EB;
+  font-weight: bold;
+  margin-bottom: 6px;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 20px;
+  border-top: 1px solid #1F2937;
+  padding-top: 10px;
+}
+
+/* ===== Small Text ===== */
+small{
+  color:#9CA3AF;
+}
+
+</style>
+
+
+</head>
+
+<body>
+
+<header>
+
+<!-- Exact marquee text preserved -->
+<marquee style="background:#22C55E;color:#022C22;padding:6px;">
+Welcome to Mini-Wiki! Your go-to source for quick and concise information on a wide range of topics. Explore our collection of articles and discover something new today.
+</marquee>
+
+<nav>
+<a href="index.html">Home</a>
+<a href="topic1.html">Alien Life</a>
+<a href="topic2.html">Time Travel</a>
+<a href="topic3.html">Simulation Theory</a>
+<a href="topic4.html">Parallel Universe</a>
+<a href="topic5.html">Singularity</a>
+<a href="feedback.html">Feedback</a>
+</nav>
+
+</header>
+
+<main>
+
+<!-- Logo -->
+<img src="PIC1.png" alt="Mini-Wiki Logo" class="logo">
+
+<!-- Intro (kept clean & simple) -->
+<section class="intro">
+
+<p>
+<strong>Mini-Wiki</strong> is a small educational knowledge website that presents
+clear and concise explanations of selected science-fiction concepts. The site is
+designed to organize information in a simple and easy-to-read structure.
+</p>
+
+</section>
+
+
+<!-- About -->
+<details>
+<summary>About Mini-Wiki</summary>
+
+<p>
+Mini-Wiki provides brief articles on topics such as alien life, time travel,
+simulation theory, parallel universes, and the technological singularity.
+Each article focuses on key ideas, definitions, and simplified explanations
+to make complex concepts easier to understand.
+</p>
+
+</details>
+
+
+<!-- Topics -->
+<details>
+<summary>Topics Covered</summary>
+
+<ul style="display:inline-block;text-align:left;">
+<li>Alien Life (Extraterrestrial existence)</li>
+<li>Time Travel and temporal paradoxes</li>
+<li>Simulation Theory</li>
+<li>Parallel Universes (Multiverse concept)</li>
+<li>Technological Singularity and human–technology merging</li>
+</ul>
+
+</details>
+
+
+<!-- How to use -->
+<details>
+<summary>How to Use This Site</summary>
+
+<p>
+Use the navigation menu at the top of the page to explore different topics.
+Each page contains a short explanation and organized information to help
+readers quickly understand the concept.
+</p>
+
+</details>
+
+
+<!-- Project Note -->
+<details>
+<summary>Project Note</summary>
+
+<p>
+This website is created as part of a web design assignment to demonstrate
+the use of structured HTML, semantic elements, and basic page organization.
+</p>
+
+</details>
+
+
+<!-- Author -->
+<details>
+<summary>About the Author</summary>
+
+<p>
+This website was developed by <strong>Mehul Kumar</strong> as part of an academic web design project. 
+He is a B.Tech student in the Department of Computer Science and Engineering at South Asian University, 
+New Delhi, India, and also pursuing a Bachelor of Science in Data Science from the Indian Institute of Technology 
+Madras, Chennai, India.
+</p>
+
+<p>
+The purpose of this project is to demonstrate structured HTML design, semantic web elements, 
+basic layout organization, and simple user-friendly navigation. The website focuses on presenting 
+clear and concise explanations of selected science-fiction concepts in an organized and readable format.
+</p>
+
+<p>
+Areas of academic interest include web development, data science, artificial intelligence, 
+and technology-driven innovation. This project reflects an effort to combine technical learning 
+with clean and structured presentation of knowledge.
+</p>
+
+<p>
+This website is created solely for educational and demonstration purposes and is not affiliated 
+with any commercial organization.
+</p>
+
+</details>
+
+<!-- Copyright -->
+<details>
+<summary>Copyright & Terms</summary>
+
+<p>
+© 2026 <strong>Mini-Wiki</strong>. All rights reserved. The content, design,
+and structure of this website are the intellectual property of the author and
+are protected for educational and non-commercial use.
+</p>
+
+<p>
+Unauthorized copying, reproduction, or redistribution of any material from this
+website without permission is not intended. This site is created solely for
+academic and demonstration purposes.
+</p>
+
+<p>
+<strong>Terms and Conditions:</strong><br>
+• The information provided is for educational and informational purposes only.<br>
+• Content accuracy is not guaranteed and should not be treated as professional advice.<br>
+• Users are responsible for how they interpret and use the information.<br>
+• The author is not liable for any misuse of content or misunderstanding.<br>
+• This website does not collect personal data or provide commercial services.
+</p>
+
+</details>
+
+
+<!-- Declaration -->
+<details>
+<summary>Academic Declaration</summary>
+
+<p>
+I hereby declare that this project is my original work and has been created
+for academic purposes. Any reference material used has been adapted for
+educational use only.
+</p>
+
+</details>
+
+</main>
+
+<footer class="site-footer">
+
+<div class="footer-container">
+
+  <!-- Brand -->
+  <div class="footer-section">
+    <div class="footer-title">Mini-Wiki</div>
+    <div>
+      A concise educational website presenting simplified
+      explanations of science-fiction concepts.
+    </div>
+  </div>
+
+  <!-- Contact -->
+  <div class="footer-section">
+    <div class="footer-title">Contact</div>
+    Email: mehul.kumar2025@students.sau.ac.in <br>
+    Email: 25f3006271@ds.study.iitm.ac.in <br>
+    Phone: +91-9311468222 <br>
+    Location: New Delhi, India
+  </div>
+
+  <!-- Info -->
+  <div class="footer-section">
+    <div class="footer-title">Information</div>
+    Educational Project <br>
+    Non-commercial use <br>
+    Created for academic purposes
+  </div>
+
+</div>
+
+<div class="footer-bottom">
+© 2026 Mini-Wiki. All rights reserved. <br>
+Last Updated: February 2026
+</div>
+
+</footer>
+
+</body>
+</html>
