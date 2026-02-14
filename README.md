@@ -90,4 +90,3 @@ Indian Institute of Technology Madras
 This project is created for educational and non-commercial use only.  
 Content is simplified for learning and demonstration purposes.
 © 2026 Mini-Wiki. All rights reserved.
-# Mini-Wiki
